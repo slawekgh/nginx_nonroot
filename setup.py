@@ -1,14 +1,5 @@
-#!/usr/bin/env python
-
-from setuptools import setup, find_packages
-
-setup(
-    name = 'MyPackageName',
-    version = '1.0.0',
-    url = 'https://github.com/mypackage.git',
-    author = 'Author Name',
-    author_email = 'author@gmail.com’,
-    description = 'Description of my package',
-    packages = find_packages(),    
-    install_requires = ['numpy >= 1.11.1', 'matplotlib >= 1.5.1'],
-)
+from distutils.core import setup
+setup(name='foo',
+      version='1.0',
+      py_modules=['foo'],
+      )
