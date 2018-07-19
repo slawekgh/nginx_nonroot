@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
-setup(name='Distutils',
-      version='1.0',
-      description='Python Distribution Utilities',
-      author='Greg Ward',
-      author_email='gward@python.net',
-      url='https://www.python.org/sigs/distutils-sig/',
-      packages=['distutils', 'distutils.command'],
-     )
+setup(
+    name = 'MyPackageName',
+    version = '1.0.0',
+    url = 'https://github.com/mypackage.git',
+    author = 'Author Name',
+    author_email = 'author@gmail.com’,
+    description = 'Description of my package',
+    packages = find_packages(),    
+    install_requires = ['numpy >= 1.11.1', 'matplotlib >= 1.5.1'],
+)
