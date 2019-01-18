@@ -1,3 +1,3 @@
 FROM nginx:1.15.0
 MAINTAINER gimboo
-RUN apt-get update && apt-get install -y procps vim
+#RUN apt-get update && apt-get install -y procps vim
